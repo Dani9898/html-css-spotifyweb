@@ -124,6 +124,7 @@ footer {
     width: 100vw;
     height: 90px;
     background-color: #282828;
+    color: white;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -131,17 +132,26 @@ footer {
 }
 
 footer aside {
-    border: 1px solid yellow;
     width: 20%;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-footer aside img {
+#song-name {
+    opacity: 0.7;
+}
+
+footer img {
     width: 15%;
 }
 
+footer aside .far {
+    margin: 0 5px;
+    opacity: 0.7;
+}
+
 footer section {
-    border: 1px solid white;
     width: 60%;
     height: 100%;
 }
