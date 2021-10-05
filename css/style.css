@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
 }
 
 
@@ -18,16 +17,102 @@
 
 /* aside */
 
-aside {
-    width: 300px;
+#wrapper aside {
+    width: 250px;
     height: 100%;
     background-color: black;
+    overflow: auto;
+    position: relative;
 }
+
+#aside-container {
+    width: 90%;
+    height: 100%;
+    margin:  auto;
+}
+
+.view-on-responsive {
+    display: none;
+}
+
+#wrapper #logo {
+    width: 70%;
+    margin: 15px 0;
+}
+
+#wrapper ul {
+    margin: 20px 0 30px 0;
+}
+
+#wrapper #nav-principale {
+    font-weight: 700;
+}
+
+#wrapper aside ul li {
+    margin: 10px 0;
+}
+
+#wrapper aside ul li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+}
+
+#wrapper aside ul li:first-child a {
+    opacity: 1;
+}
+
+#wrapper aside ul li a img {
+    width: 10%;
+    vertical-align: middle;
+}
+
+#playlist li:nth-child(-n+2) a {
+    font-weight: 700;
+}
+
+
+#playlist li:not(:nth-child(-n+2)) a {
+    font-size: 0.8em;
+}
+
+#playlist li:not(:nth-child(-n+2)) {
+    margin: 15px 0;
+}
+
+#aside-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+}
+
+#aside-bottom img {
+    width: 10%;
+    margin: 10px 10px 10px 0;
+    vertical-align: middle;
+}
+
+#aside-bottom img:last-of-type {
+    background-color: gray;
+    border-radius: 50%;
+}
+
+#aside-bottom span {
+    color: white;
+}
+
+#aside-bottom img:first-of-type, 
+#aside-bottom span:first-of-type {
+    opacity: 0.7;
+    font-size: 0.8em;
+}
+
+
 
 /* main */
 
 main {
-    width: calc(100vw - 200px);
+    width: calc(100vw - 250px);
     height: 100%;
     background-color: red;
 }
@@ -36,7 +121,81 @@ main {
 
 /* footer */
 footer {
-    width: 100%;
-    height: 110px;
-    background-color: pink;
+    width: 100vw;
+    height: 90px;
+    background-color: #282828;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+footer aside {
+    border: 1px solid yellow;
+    width: 20%;
+    display: flex;
+}
+
+footer aside img {
+    width: 15%;
+}
+
+footer section {
+    border: 1px solid white;
+    width: 60%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* aside responsive */
+@media all and (max-width: 400px) {
+
+    aside {
+        width: 40px;
+    }
+
+    main {
+        width: calc(100vw - 40px);
+    }
+
+    .view-on-responsive {
+        display:initial;
+    }
+
+    #aside-icon,
+     #aside-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #aside-icon img {
+        width: 50%;
+        margin: 10px 0;
+    }
+
+    aside #logo, aside #nav-principale,
+    aside #playlist, 
+    #aside-bottom span,
+    hr {
+        display: none;
+    }
+
+    #aside-bottom img {
+        width: 40%;
+        margin: 5px 0;
+    }
+
+}
+
