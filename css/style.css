@@ -27,6 +27,9 @@ footer aside .far:hover {
     font-size: 120%;
 }
 
+.song:hover .hover-play, .song:hover .scuro {
+    display: block;
+}
 
 /* wrapper */
 
@@ -211,6 +214,7 @@ main section h2 {
 .song {
     width: 15%;
     margin: 0 calc(10% / 6);
+    position: relative;
 }
 
 .song img {
@@ -228,6 +232,30 @@ main section h2 {
     margin-top: 10px;
 }
 
+.song-thumbnail {
+    position: relative;
+}
+
+.scuro {
+    height: 99%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.hover-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    color: white;
+    display: none;
+}
+
 main section .sub-title {
     margin-left: 30px;
     margin-top: 20px;
@@ -235,7 +263,7 @@ main section .sub-title {
     opacity: 0.7;
 }
 
-.rotondo {
+.rotondo img, .rotondo .scuro {
     border-radius: 50%;
 }
 
@@ -295,6 +323,13 @@ footer aside .far {
     opacity: 0.7;
 }
 
+footer section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #player-bar {
     display: flex;
     align-items: center;
@@ -311,9 +346,9 @@ footer aside .far {
 
 .progression-bar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-top: 5px;
+    width: 50%;
 }
 
 .bar {
