@@ -21,31 +21,31 @@
     width: 250px;
     height: 100%;
     background-color: black;
-    overflow: auto;
-    position: relative;
 }
 
 #aside-container {
     width: 90%;
     height: 100%;
     margin:  auto;
+    overflow: auto;
+    font-size: 0.8em;
 }
 
 .view-on-responsive {
     display: none;
 }
 
-#wrapper #logo {
+#logo {
     width: 70%;
-    margin: 15px 0;
+    margin: 15px 0 10px 0;
 }
 
-#wrapper ul {
-    margin: 20px 0 30px 0;
-}
-
-#wrapper #nav-principale {
+#nav-principale {
     font-weight: 700;
+}
+
+#nav-principale ul {
+    margin-bottom: 20px;
 }
 
 #wrapper aside ul li {
@@ -71,6 +71,11 @@
     font-weight: 700;
 }
 
+.fa-plus-square {
+    font-size: 3em;
+    vertical-align: middle;
+    margin-right: 5px;
+}
 
 #playlist li:not(:nth-child(-n+2)) a {
     font-size: 0.8em;
@@ -80,11 +85,7 @@
     margin: 15px 0;
 }
 
-#aside-bottom {
-    position: absolute;
-    bottom: 0;
-    width: 90%;
-}
+
 
 #aside-bottom img {
     width: 10%;
@@ -109,6 +110,9 @@
 
 
 
+
+
+
 /* main */
 
 main {
@@ -116,6 +120,7 @@ main {
     height: 100%;
     background-color: red;
 }
+
 
 
 
@@ -135,15 +140,28 @@ footer aside {
     width: 20%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#played-song {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    height: 100%;
 }
 
 #song-name {
     opacity: 0.7;
+    margin-left: 10px;
 }
 
 footer img {
-    width: 15%;
+    height: 60%;
+}
+
+#actions {
+    display: flex;
 }
 
 footer aside .far {
@@ -153,7 +171,41 @@ footer aside .far {
 
 footer section {
     width: 60%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#player-bar {
+    display: flex;
+    align-items: center;
+}
+
+#player-bar .fas {
+    margin: 0 5px;
+}
+
+#player-bar .fa-play-circle {
+    font-size: 2em;
+    margin: 0 20px;
+}
+
+#progression-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#progression-bar span {
+    margin: 0 15px;
+}
+#bar {
+    height: 3px;
+    width: 350px;
+    background-color: white;
+    opacity: 0.5;
 }
 
 
@@ -171,8 +223,14 @@ footer section {
 /* aside responsive */
 @media all and (max-width: 400px) {
 
-    aside {
+    #wrapper aside {
         width: 40px;
+    }
+
+    #aside-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     main {
@@ -184,7 +242,7 @@ footer section {
     }
 
     #aside-icon,
-     #aside-bottom {
+    #aside-bottom {
         display: flex;
         flex-direction: column;
         align-items: center;

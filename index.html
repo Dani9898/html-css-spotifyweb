@@ -15,8 +15,9 @@
     <title>Spotify</title>
 </head>
 <body>
-    
+    <!-- nav e contenuto -->
     <div id="wrapper">
+        <!-- nav -->
         <aside>
             <div id="aside-container">
 
@@ -54,7 +55,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <img src="img/download.svg" alt="">
+                                <i class="fas fa-plus-square"></i>
                                 Crea Playlist
                             </a>
                         </li>
@@ -106,23 +107,37 @@
         </main>
 
     </div>
-
+    <!-- player -->
     <footer>
         <aside>
-            <img src="img/sinister.jpeg" alt="song">
-            <div id="song-name">
-                <h5>Sinister</h5>
+            <div id="played-song">
+                <img src="img/sinister.jpeg" alt="song">
+                <div id="song-name">
+                <h4>Sinister</h4>
                 <span>Brano Nome</span>
-            </div>
+                </div>
+            </div>        
             <div id="actions">
                 <i class="far fa-heart"></i>
                 <i class="far fa-folder"></i>
             </div>
-
         </aside>
-        <section>
 
+        <section>
+            <div id="player-bar">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo-alt"></i>
+            </div>
+            <div id="progression-bar">
+                <span>0:25</span>
+                <div id="bar"></div>
+                <span>4:35</span>
+            </div>
         </section>
+
         <aside>
 
         </aside>
