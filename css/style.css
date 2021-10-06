@@ -119,6 +119,7 @@ main {
     width: calc(100vw - 250px);
     height: 100%;
     background-color: #141922;
+    overflow: auto;
 }
 
 main section:first-of-type {
@@ -139,7 +140,7 @@ main section:first-of-type {
 }
 
 #main-menu {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 #main-menu ul {
@@ -159,11 +160,12 @@ main section:first-of-type {
 
 main section h2 {
     color: white;
-    margin: 40px 0 40px 20px;
+    margin: 40px 0 5px 30px;
 }
 
 .songs {
     display: flex;
+    margin: 30px 0;
 }
 
 .song {
@@ -174,6 +176,39 @@ main section h2 {
 .song img {
     width: 100%;
 }
+
+.song-info {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.song-info h6 {
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+main section .sub-title {
+    margin-left: 30px;
+    margin-top: 20px;
+    color: white;
+    opacity: 0.7;
+}
+
+.rotondo {
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer */
 footer {
@@ -209,7 +244,6 @@ footer aside {
 footer img {
     height: 60%;
 }
-
 
 footer aside .far {
     margin: 0 5px;
@@ -248,6 +282,7 @@ footer aside .far {
 footer aside:nth-of-type(2) .fas {
     margin: 0 10px;
 }
+
 
 
 
