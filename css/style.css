@@ -118,11 +118,62 @@
 main {
     width: calc(100vw - 250px);
     height: 100%;
-    background-color: red;
+    background-color: #141922;
 }
 
+main section:first-of-type {
+    height: 80px;
+    background-color: #080b12;
+    text-align: end;
+    line-height: 80px;
+}
 
+#upgrade  {
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+    border: 1px solid white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: 700;
+}
 
+#main-menu {
+    margin: 10px 0;
+}
+
+#main-menu ul {
+    text-align: center;
+}
+
+#main-menu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#main-menu ul li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.7;
+}
+
+main section h2 {
+    color: white;
+    margin: 40px 0 40px 20px;
+}
+
+.songs {
+    display: flex;
+}
+
+.song {
+    width: 15%;
+    margin: 0 calc(10% / 6);
+}
+
+.song img {
+    width: 100%;
+}
 
 /* footer */
 footer {
