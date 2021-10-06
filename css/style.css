@@ -5,6 +5,27 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* hover */
+
+#wrapper aside ul li a:hover,
+#aside-bottom span:first-of-type:hover,
+#main-menu ul li a:hover,
+footer aside .far:hover {
+    opacity: 1;
+}
+
+#song-name a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+#player-bar .fa-play-circle:hover {
+    transform: scale(1.2);
+}
+
+#upgrade:hover {
+    font-size: 120%;
+}
 
 
 /* wrapper */
@@ -29,6 +50,7 @@
     margin:  auto;
     overflow: auto;
     font-size: 0.8em;
+    position: relative;
 }
 
 .view-on-responsive {
@@ -58,6 +80,7 @@
     opacity: 0.7;
 }
 
+
 #wrapper aside ul li:first-child a {
     opacity: 1;
 }
@@ -85,7 +108,13 @@
     margin: 15px 0;
 }
 
-
+#aside-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    margin: 0 5%;
+}
 
 #aside-bottom img {
     width: 10%;
@@ -150,6 +179,17 @@ main section:first-of-type {
 #main-menu ul li {
     display: inline-block;
     margin: 0 10px;
+    position: relative;
+}
+
+#main-menu ul li span {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 36%;
+    height: 2px;
+    background-color: #adff2f;
+    transform: translate(-50%, 0);
 }
 
 #main-menu ul li a {
@@ -237,8 +277,13 @@ footer aside {
 }
 
 #song-name {
-    opacity: 0.7;
     margin-left: 10px;
+}
+
+#song-name a {
+    opacity: 0.7;
+    text-decoration: none;
+    color: white;
 }
 
 footer img {
