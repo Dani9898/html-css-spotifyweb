@@ -12,6 +12,11 @@
 #main-menu ul li a:hover,
 footer aside .far:hover {
     opacity: 1;
+    cursor: pointer;
+}
+
+.fas:hover {
+    cursor: pointer;
 }
 
 #aside-bottom span {
@@ -36,8 +41,6 @@ footer aside .far:hover {
     display: block;
     cursor: pointer;
 }
-
-
 
 .bar:hover {
     cursor: pointer;
