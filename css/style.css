@@ -24,7 +24,7 @@ footer aside .far:hover {
 }
 
 #upgrade:hover {
-    font-size: 120%;
+    transform: scale(1.1);
 }
 
 .song:hover .hover-play, .song:hover .scuro {
@@ -61,7 +61,7 @@ footer aside .far:hover {
 }
 
 #logo {
-    width: 70%;
+    width: 60%;
     margin: 15px 0 10px 0;
 }
 
@@ -156,21 +156,35 @@ main {
 
 main section:first-of-type {
     height: 80px;
-    background-color: #080b12;
-    text-align: end;
-    line-height: 80px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-left: 250px;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-#upgrade  {
-    text-decoration: none;
-    color: white;
-    margin-right: 40px;
-    border: 1px solid white;
+#upgrade {
     padding: 15px 30px;
+    border: 2px solid white;
+    margin-right: 40px;
     border-radius: 30px;
-    font-weight: 700;
 }
 
+#upgrade a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+main section:last-of-type {
+    margin-top: 100px;
+}
 #main-menu {
     margin: 20px 0;
 }
@@ -199,11 +213,13 @@ main section:first-of-type {
     text-decoration: none;
     color: white;
     opacity: 0.7;
+    font-size: 17px;
 }
 
 main section h2 {
     color: white;
     margin: 40px 0 5px 30px;
+    font-size: 25px;
 }
 
 .songs {
@@ -213,7 +229,7 @@ main section h2 {
 
 .song {
     width: 15%;
-    margin: 0 calc(10% / 6);
+    margin: 0 calc(5% / 6);
     position: relative;
 }
 
@@ -225,6 +241,7 @@ main section h2 {
     text-align: center;
     color: white;
     margin-top: 10px;
+    font-size: 15px;
 }
 
 .song-info h6 {
@@ -234,15 +251,16 @@ main section h2 {
 
 .song-thumbnail {
     position: relative;
+    font-size: 14px;
 }
 
 .scuro {
-    height: 99%;
-    width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 4px;
+    right: 0;
     display: none;
 }
 
@@ -261,6 +279,7 @@ main section .sub-title {
     margin-top: 20px;
     color: white;
     opacity: 0.7;
+    font-size: 13px;
 }
 
 .rotondo img, .rotondo .scuro {
@@ -280,11 +299,14 @@ main section .sub-title {
 
 /* footer */
 footer {
-    width: 100vw;
     height: 90px;
     background-color: #282828;
     color: white;
     position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -366,17 +388,137 @@ footer aside:nth-of-type(2) .fas {
 
 
 
+/* responsive */
+@media all and (max-width: 1335px) {
+
+    #upgrade {
+        padding: 13px 26px;
+        margin-right: 36px;
+    }
+
+    #upgrade a {
+        font-size: 12px
+    }
+
+    #main-menu ul li a {
+        font-size: 15px;
+    }
+
+    main section h2 {
+        margin: 35px 0 5px 25px;
+        font-size: 21px;
+    }
+
+    .songs {
+        margin: 27px 0;
+    }
+
+    .song-info {
+        font-size: 12px;
+    }
+
+    .song-info h6 {
+        margin-top: 8px;
+    }
+
+    main section .sub-title {
+        font-size: 12px;
+        margin-left: 26px;
+        margin-top: 17px;  
+    }
+
+}
+
+@media all and (max-width: 1117px) {
+
+    #upgrade {
+        padding: 11px 22px;
+        margin-right: 33px;
+    }
+
+    #upgrade a {
+        font-size: 10px
+    }
+
+    #main-menu ul li a {
+        font-size: 13px;
+    }
+
+    main section h2 {
+        margin: 30px 0 5px 20px;
+        font-size: 19px;
+    }
+
+    .songs {
+        margin: 24px 0;
+    }
+
+    .song-info {
+        font-size: 10px;
+    }
+
+    .song-info h6 {
+        margin-top: 6px;
+    }
+
+    main section .sub-title {
+        font-size: 10px;
+        margin-left: 23px;
+        margin-top: 14px;  
+    }
+
+}
+
+@media all and (max-width: 973px) {
+
+    #upgrade {
+        padding: 9px 18px;
+        margin-right: 30px;
+    }
+
+    #upgrade a {
+        font-size: 8px
+    }
+
+    #main-menu ul li a {
+        font-size: 11px;
+    }
+
+    .songs {
+        flex-wrap: wrap;
+         margin: 24px 0;
+    }
+
+    .song {
+        width: 20%;
+        margin: 0 calc(20% / 8);
+    }
+
+    .song:nth-of-type(5), .song:nth-of-type(6) {
+        margin-top: 10px;
+    }
+
+    .song-info {
+        font-size: 10px;
+    }
+
+    .song-info h6 {
+        margin-top: 4px;
+    }
+
+    main section h2 {
+        font-size: 18px;
+        margin: 30px 0 0 20px;
+    }
+
+    main section .sub-title {
+        font-size: 8px;
+        margin-left: 20px;
+        margin-top: 0px;  
+    }
+}
 
 
-
-
-
-
-
-
-
-
-/* aside responsive */
 @media all and (max-width: 400px) {
 
     #wrapper aside {
@@ -422,4 +564,3 @@ footer aside:nth-of-type(2) .fas {
     }
 
 }
-
