@@ -14,6 +14,10 @@ footer aside .far:hover {
     opacity: 1;
 }
 
+#aside-bottom span {
+    cursor: pointer;
+}
+
 #song-name a:hover {
     text-decoration: underline;
     opacity: 1;
@@ -25,10 +29,18 @@ footer aside .far:hover {
 
 #upgrade:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .song:hover .hover-play, .song:hover .scuro {
     display: block;
+    cursor: pointer;
+}
+
+
+
+.bar:hover {
+    cursor: pointer;
 }
 
 .bar:hover::after {
