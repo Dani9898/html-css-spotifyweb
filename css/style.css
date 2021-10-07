@@ -142,9 +142,6 @@ footer aside .far:hover {
 
 
 
-
-
-
 /* main */
 
 main {
@@ -169,17 +166,18 @@ main section:first-of-type {
 }
 
 #upgrade {
-    padding: 15px 30px;
+    padding: 8px 13px;
     border: 2px solid white;
     margin-right: 40px;
     border-radius: 30px;
+    line-height: 11px
 }
 
 #upgrade a {
     color: white;
     text-decoration: none;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 11px;
 }
 
 main section:last-of-type {
@@ -288,15 +286,6 @@ main section .sub-title {
 
 
 
-
-
-
-
-
-
-
-
-
 /* footer */
 footer {
     height: 90px;
@@ -391,13 +380,8 @@ footer aside:nth-of-type(2) .fas {
 /* responsive */
 @media all and (max-width: 1335px) {
 
-    #upgrade {
-        padding: 13px 26px;
-        margin-right: 36px;
-    }
-
-    #upgrade a {
-        font-size: 12px
+    #main-menu ul li span {
+        bottom: -4px;
     }
 
     #main-menu ul li a {
@@ -431,13 +415,8 @@ footer aside:nth-of-type(2) .fas {
 
 @media all and (max-width: 1117px) {
 
-    #upgrade {
-        padding: 11px 22px;
-        margin-right: 33px;
-    }
-
-    #upgrade a {
-        font-size: 10px
+    #main-menu ul li span {
+        bottom: -3px;
     }
 
     #main-menu ul li a {
@@ -471,13 +450,8 @@ footer aside:nth-of-type(2) .fas {
 
 @media all and (max-width: 973px) {
 
-    #upgrade {
-        padding: 9px 18px;
-        margin-right: 30px;
-    }
-
-    #upgrade a {
-        font-size: 8px
+    #main-menu ul li span {
+        bottom: -2px;
     }
 
     #main-menu ul li a {
@@ -518,8 +492,30 @@ footer aside:nth-of-type(2) .fas {
     }
 }
 
+@media all and (max-width: 682px) {
 
-@media all and (max-width: 400px) {
+    #main-menu ul li span {
+        bottom: -1px;
+    }
+
+    .song {
+        width: 40%;
+        margin: 0 5%;
+    }
+
+    .song:nth-of-type(3), .song:nth-of-type(4) {
+        margin-top: 10px;
+    }
+
+    .song-info {
+        font-size: 12px;
+    }
+}
+
+
+
+
+@media all and (max-width: 541px) {
 
     #wrapper aside {
         width: 40px;
@@ -561,6 +557,10 @@ footer aside:nth-of-type(2) .fas {
     #aside-bottom img {
         width: 40%;
         margin: 5px 0;
+    }
+
+    main section:first-of-type {
+        margin-left: 40px;
     }
 
 }
