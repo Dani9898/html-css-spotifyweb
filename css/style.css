@@ -31,6 +31,15 @@ footer aside .far:hover {
     display: block;
 }
 
+.bar:hover::after {
+    background-color: lawngreen;
+}
+
+.bar:hover .cerchietto {
+    display: block;
+}
+
+
 /* wrapper */
 
 #wrapper {
@@ -319,10 +328,15 @@ footer aside {
     margin-left: 10px;
 }
 
+#song-name h4 {
+    font-size: 12px;
+}
+
 #song-name a {
     opacity: 0.7;
     text-decoration: none;
     color: white;
+    font-size: 11px;
 }
 
 footer img {
@@ -365,15 +379,45 @@ footer section {
 .bar {
     height: 3px;
     width: 100%;
-    background-color: white;
-    opacity: 0.5;
+    background-color: #5a5a5a;
     margin: 0 10px;
+    position: relative;
+}
+
+.bar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    background-color: #c1c1c1;
+}
+
+.cerchietto {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 50%;
+    height: 17px;
+    width: 17px;
+    z-index: 8;
+    display: none;
+}
+
+footer aside:nth-of-type(2) {
+    width: 20%;
 }
 
 footer aside:nth-of-type(2) .fas {
     margin: 0 10px;
 }
 
+aside .bar {
+    width: 50%;
+}
 
 
 
@@ -446,6 +490,13 @@ footer aside:nth-of-type(2) .fas {
         margin-top: 14px;  
     }
 
+    #song-name h4 {
+        font-size: 10px;
+    }
+    
+    #song-name a {
+        font-size: 9px;
+    }
 }
 
 @media all and (max-width: 973px) {
@@ -489,6 +540,14 @@ footer aside:nth-of-type(2) .fas {
         font-size: 8px;
         margin-left: 20px;
         margin-top: 0px;  
+    }
+
+    #song-name h4 {
+        font-size: 9px;
+    }
+    
+    #song-name a {
+        font-size: 8px;
     }
 }
 
